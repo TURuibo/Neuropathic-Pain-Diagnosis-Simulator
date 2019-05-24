@@ -1,0 +1,144 @@
+sv_symp,en_symp,reason
+IBS,IBS,T10;T11;T12;L1;L2
+L Nackbesvär,L Neck problems,C2;C3;C4;C5;C6;C7
+Nackbesvär,neck pain,C2;C3;C4;C5;C6;C7
+R Nackbesvär,R neck,C2;C3;C4;C5;C6;C7
+L Tinnitus,L Tinnitus,C2
+L Ögonbesvär,L Eye problems,C2
+L Öronbesvär,L Ear problems,C2
+R Tinnitus,R Tinnitus,C2
+R Ögonbesvär,R Eye problems,C2
+R Öronbesvär,R Ear problems,C2
+Huvudvärk,Headache,C2
+L Käkbesvär,L Jaw problems,C2
+L Pannhuvudvärk,L forehead Headache,C2;C3
+Munbesvär,mouth,C2;C3
+Pannhuvudvärk,Forehead Headache,C2;C3
+R Pannhuvudvärk,R Headache,C2;C3
+R PFS,R PTA,L4;L5
+Svalgbesvär,pharyngeal discomfort,C2;C3
+R Käkbesvär,R Jaw trouble,C2;C3
+Bakhuvudvärk,back headache,C3
+R Bakhuvudvärk,R Back headache pain,C3
+L Nyckelbensbesvär,L collarbone pain,C3;C4
+R Nyckelbensbesvär,R Collarbone problems,C3;C4
+Central bröstsmärta,Central chest pain,C3;C4
+L Central bröstsmärta,L Central chest pain,C3;C4
+L Centrala bröstbesvär,L Central chest disorders,C3;C4
+R Främre Axelbesvär,R Front Axle Problems,C4;C5;C6
+L Axel impingement,L shoulder impingement,C4;C5;C6
+R Axel impingement,R shoulder impingement,C4;C5;C6
+L Axelbesvär,L Shoulder problems,C4;C5;C6;C7;C8
+L Skulderbesvär,L Shoulder trouble,C4;C5;C6;C7;C8
+R Axelbesvär,R Shoulder problems,C4;C5;C6;C7;C8
+R Skulderbesvär,R Shoulder trouble,C4;C5;C6;C7;C8
+L Övre armsbesvär,L Upper arm discomfort,C5
+L Övre armbågsbesvär,L Upper elbow pain,C5
+Interskapulära besvär,Intracapular problems,C5;C6
+L Interskapulära besvär,L Interscapular complaints,C5;C6
+R Interskapulära besvär,R Intracapular trouble,C5;C6
+L Laterala armbågsbesvär,L Lateral elbow pain,C5;C6
+L Laterala armsbesvär,L Lateral arm discomfort,C5;C6
+R Laterala armbågsbesvär,R Lateral elbow pain,C5;C6
+L Armbågsbesvär,L Elbow problems,C5;C6;C7;C8
+R Armbågsbesvär,R Elbow trouble,C5;C6;C7;C8
+L Armbesvär,L Arm,C5;C6;C7;C8;T1
+L Tumbesvär,L Thumbs up,C6
+R Tumbesvär,R Thumbs up,C6
+L Handledsbesvär,L Wrist problems,C6;C7
+R Handledsbesvär,R Wrist problems,C6;C7
+L Under armsbesvär,L lower arm disorders,C6;C7;C8
+R Under armsbesvär,R lower arm disorders,C6;C7;C8
+L Handbesvär,L Hand problems,C6;C7;C8
+R Handbesvär,R Hand problems,C6;C7;C8
+L Armvecksbesvär,L bend of arm problems,C6;C7;C8;T1
+R Armbesvär,R Armband,C6;C7;C8;T1
+R Armvecksbesvär,R bend of arm discomfort,C6;C7;C8;T1
+L Mediala armbågsbesvär,L Medial elbow problems,C7;C8
+R Mediala armbågsbesvär,R Medial elbow problems,C7;C8
+L Fingerbesvär,L Finger trouble,C7;C8
+R Fingerbesvär,R Finger trouble,C7;C8
+L Lillfingerbesvär,L Small finger trouble,C8
+R Lillfingerbesvär,R Little finger trouble,C8
+L Ljumskbesvär,L groin trouble,L1;L2
+L Mediala ljumskbesvär,L Medial groin disorders,L1;L2
+L Laterala ljumskbesvär,L Lateral groin discomfort,L1;L2
+Centrala Ljumskbesvär,Central groin disorders,L1;L2
+R Laterala ljumskbesvär,R Lateral groin discomfort,L1;L2
+R Ljumskbesvär,R Groin trouble,L1;L2
+L Adduktortendalgi,L Adductor tendon,L1;L2;S1;S2
+R Adduktortendalgi,R adductor tendonitis ,L1;L2;S1;S2
+L Höftbesvär,L Hip disorders,L2;L3
+L Bakhuvudvärk,L Backache,L2;L3;L4;L5;S1
+Ryggsbesvär,Backache,L2;L3;L4;L5;S1
+L Lumbago,L Lumbago,L2;L3;L4;L5;S1
+Lumbago,lumbago,L2;L3;L4;L5;S1
+R Lumbago,R Lumbago,L2;L3;L4;L5;S1
+L Främre lårbesvär,L Front thigh pain,L3;L4
+R Främre lårbesvär,R Front thigh pain,L3;L4
+R Lårbesvär,R Thigh problems,L3;L4;L5;S1
+L Benbesvär,L Leg problems,L3;L4;L5;S1
+L Lårbesvär,L Thigh pain,L3;L4;L5;S1
+R Benbesvär,R Leg problems,L3;L4;L5;S1
+R Mediala vadbesvär,?,L4
+L PFS,L PTA,L4;L5
+L Höftkamsbesvär,L Hip joint,L4;L5
+R Höftbesvär,R Hip trouble,L4;L5
+R Höftkamsbesvär,R Hip arthritis,L4;L5
+L Mediala knäledsbesvär,L Medial knee joint disorder,L4;L5
+L Främre knäbesvär,L Front knee pain,L4;L5
+R Mediala knäledsbesvär,R Medial knee joint disorder,L4;L5
+R Främre knäbesvär,R Front knee pain,L4;L5
+L Tibiaperialgi,L shin,L4;L5
+R Tibiaperialgi,R shin,L4;L5
+L Laterala vadbesvär,L Llower leg problems,L4;L5;S1
+L Knäbesvär,L Knee trouble,L4;L5;S1
+R Knäbesvär,R Knee trouble,L4;L5;S1
+L Tåledbesvär,?,L5
+L Stortårbesvär,L big toe problems,L5
+R Stortårbesvär,R big toe Problems,L5
+L Fotbesvär,L Foot pain,L5
+L Fotledsbesvär,L Ankle trouble,L5
+R Fotledsbesvär,R Ankle trouble,L5
+L Fotvalvsbesvär,L Footstool trouble,L5
+R Fotvalvsbesvär,R arch,L5
+R Mortonbesvär,R Morton trouble,L5
+R Tåledbesvär,R Fainting,L5
+L Ischias,L Ischias,L5;S1;S2
+R Ischias,R Ischias,L5;S1;S2
+L Skinkbesvär,L Ham,L5;S1
+L Vadbesvär,L Obesity,L5;S1
+R Skinkbesvär,R Ham,L5;S1
+L Tårbesvär,L toe problems,L5;S1
+R Fotbesvär,R Foot pain,L5;S1
+R Tårbesvär,R Tear problems,L5;S1
+R Vadbesvär,R Obesity,L5;S1
+R Dorsala knäledsbesvär,R Dorsal knee joint disorder,S1
+L Dorsala knäledsbesvär,L Dorsal knee joint disorder,S1
+L Laterala knäbesvär,L Lateral knee pain,S1
+R Laterala knäbesvär,R Lateral knee pain,S1
+L Lilltåbesvär,L Small toe trouble,S1
+L Laterala Fotbesvär,L Lateral Foot Disorders,S1
+R Laterala Fotbesvär,R Lateral Foot Disorders,S1
+R Hälbesvär,R heel problems,S1
+Hälbesvär,Calcaneal pain,S1
+L Hälbesvär,L Heel  problems,S1
+Coccydyni,Coccydyni,S1
+L Bakre lårbesvär,L rear thigh pain,S1
+R Bakre lårbesvär,R Rear thigh pain,S1
+L Achillesbesvär,L Achilles problems,S1
+L Achillestendalgi,L Achilles tendon,S1
+L Achillodyni,L Achillodyni,S1
+R Achillesbesvär,R Achilles problems,S1
+R Achillestendalgi,R Achilles tendency,S1
+R Achillodyni,R Achillodyni,S1
+Bröstryggsbesvär,Breast Backache,T1;T2;T3;T4;T5;T6;T7;T8;T9;T10
+Bröstbesvär,chest discomfort,T3;T4;T5
+L Bröstbesvär,L Breast problems,T3;T4;T5
+R Bröstbesvär,R Breast problems,T3;T4;T5
+Torakal Dysfunktion,Toracal dysfunction,T3;T4;T5;T6;T7
+Övre bukbesvär,Upper abdominal discomfort,T6;T7;T8
+Laterala bukbesvär,Lateral abdominal discomfort,T6;T7;T8;T9;T10;T11;T12;L1;L2
+Bukbesvär,Abdominal discomfort,T6;T7;T8;T9;T10;T11;T12;L1;L2
+L Nedre bukbesvär,L Lower abdominal discomfort,T9;T10;T11;T12;L1;L2
+Nedre bukbesvär,Lower abdominal discomfort,T9;T10;T11;T12;L1;L2
