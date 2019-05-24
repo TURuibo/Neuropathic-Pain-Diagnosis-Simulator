@@ -16,7 +16,7 @@ The directory structure is:
 
 	requirements.txt: all the necessary packages required for the project.  
 
-	README.txt: Introduction about the project.  
+	README.md: Introduction about the project.  
 
 ## Installation
 
