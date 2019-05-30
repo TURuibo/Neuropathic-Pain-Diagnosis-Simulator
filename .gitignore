@@ -2,3 +2,6 @@
 /data/*.pk
 /backup
 update_memo.md
+.idea/
+source/__pycache__/
+venv/

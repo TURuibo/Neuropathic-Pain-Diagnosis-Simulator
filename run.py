@@ -3,7 +3,7 @@ from source import sampling as spl
 if __name__ == '__main__':
     confounder = False
     model = spl.load_pgm()
-    vars = sltr.get_var_nms()
+    vars = spl.get_var_nms()
     nun_sample = 100
     
     if confounder:
@@ -11,5 +11,5 @@ if __name__ == '__main__':
     else:
         df_sim = spl.random_sample(model, vars, nun_sample)
 
-    df_sim.to_csv('result/df_sim_'+str(nun_sample)+'_ex_conf.csv', index=True, header=True)
+    df_sim.to_csv('result/df_sim_'+str(nun_sample)+'.csv', index=True, header=True)
     print("Congratulation!")
