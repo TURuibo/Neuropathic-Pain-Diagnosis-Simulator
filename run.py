@@ -1,14 +1,28 @@
 from source import sampling as spl
 import sys
 
+
 def main(argv):
 
-    sample_size, confounder, selection_bais, missing_data = spl.parse_arg(argv)
+    sample_size, confounder, selection_bias, missing_data = spl.parse_arg(argv)
     model = spl.load_pgm()
     nms = spl.get_var_nms()
     df_sim = spl.random_sample(model, nms, sample_size)
+    out_nm = 'SampleSize'+str(sample_size)
+    if missing_data:
+        df_sim = spl.add_missing_data(df_sim, mode='mcar', seed=10, mcar_p=0.01, mar_p=[0.5, 0.01], mnar_p=[0.5, 0.01])
+        out_nm += '_MissingData'
 
-    df_sim.to_csv('result/df_sim_' + str(sample_size) + '.csv', index=True, header=True)
+    if selection_bias:
+        df_sim = spl.add_selection_bias(df_sim)
+        out_nm += '_SelectionBias'
+
+    if confounder:
+        df_sim = spl.add_confounder(df_sim)
+        out_nm += '_Confounder'
+
+    df_sim.to_csv('result/SimulatedData_' + out_nm + '.csv', index=True, header=True)
+
     print("Congratulation! The simulated dataset has already been in the \'result\' folder.")
 
 

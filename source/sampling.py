@@ -7,6 +7,87 @@ import pickle
 import sys
 import getopt
 
+
+def missing_mask(df, mode, prob_posi, prob_nega):
+
+    nrow, ncol = df.shape
+    if mode =='mar':
+        idx_no_radi = np.array(list(set(range(0, ncol)) - set(range(27, 79))))
+    else:
+        idx_no_radi = np.array(range(ncol))
+    df_mask = np.zeros((nrow, ncol))
+
+    ef = []
+    for c in range(27, 79):
+        # find an effect
+        e = np.random.choice(idx_no_radi, 1)[0]
+        ef.append(e)
+        # random numbers
+        # P( missing | c = 1 )
+        # P( missing | c = 0 )
+        cond = df.iloc[:, c] == 1
+        # Update column e values
+        df_mask[cond, e] = np.random.choice([0, 1], size=(sum(cond)), p=[1 - prob_posi, prob_posi])
+        df_mask[~cond, e] = np.random.choice([0, 1], size=(nrow - sum(cond)), p=[1 - prob_nega, prob_nega])
+
+    return df_mask
+
+
+def add_missing_data(df, mode='mcar', seed=10, mcar_p=0.0007, mar_p=[0.9, 0.1], mnar_p=[0.9, 0.093]):
+    np.random.seed(seed)
+    nrow, ncol = df.shape
+
+    if mode == 'mcar':
+        prob = mcar_p
+        df_mask = np.random.choice([0, 1], size=(nrow, ncol), p=[1 - prob, prob])
+
+    elif mode == 'mar':
+        prob_posi,prob_nega = mar_p
+        df_mask = missing_mask(df, mode, prob_posi, prob_nega)
+
+    else:
+        prob_posi,prob_nega = mnar_p
+        df_mask = missing_mask(df, mode, prob_posi, prob_nega)
+
+    for r in range(nrow):
+        for c in range(ncol):
+            if df_mask[r, c] == 1:
+                df.iloc[r, c] = None
+
+    return df
+
+
+def add_selection_bias(df, seed=10, prob=0.9):
+    np.random.seed(seed)
+    sel_var = [35, 36, 37, 38, 73, 74, 75, 76]  #
+    nrow, ncol = df.shape
+
+    # 35& L C6 Radikulopati\\
+    # 36& R C6 Radikulopati\\
+    # 37& L C7 Radikulopati\\
+    # 38& R C7 Radikulopati\\
+    # 73& L L5 Radikulopati\\
+    # 74& R L5 Radikulopati\\
+    # 75& L S1 Radikulopati\\
+    # 76& R S1 Radikulopati\\
+
+    # If one of the selection variable equals to one, then probility to missing the record is "Prob"
+    # prob = 0.9  # 90% will be deleted
+    sel_list = np.array(df.iloc[:, sel_var].sum(axis=1) > 6)  # True will be selected
+    del_list = np.random.choice([0, 1], size=nrow, p=[prob, 1 - prob]) == 1  # 0 missing false,that will not be selected
+    selected_idx_bool = del_list | sel_list
+
+    selected_idx = np.array(range(0, nrow))[selected_idx_bool]
+    df = df.iloc[selected_idx, :]
+
+    return df
+
+
+def add_confounder(df):
+    df = df.iloc[:, 79:]
+    return df
+
+
 def parse_arg(argv):
     """
     Parse the input
@@ -67,6 +148,10 @@ def parse_arg(argv):
             selection_bais = True
         elif opt in ("-m", "--missing_data"):
             missing_data = True
+
+        if sum([confounder, selection_bais, missing_data]) > 1:
+            print("Wrong input setting: One dataset only contains one practical issue.")
+            sys.exit()
 
     print('SAMPLE SIZE = ', str(sample_size), ',',
           'CONFOUNDER = ', str(confounder), ',',
