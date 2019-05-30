@@ -1,2 +1,4 @@
 .DS_Store
 /data/*.pk
+/backup
+update_memo.md
