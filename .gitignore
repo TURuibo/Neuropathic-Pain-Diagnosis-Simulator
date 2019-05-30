@@ -1,5 +1,5 @@
 .DS_Store
-/data/*.pk
+/data
 /backup
 update_memo.md
 .idea/
