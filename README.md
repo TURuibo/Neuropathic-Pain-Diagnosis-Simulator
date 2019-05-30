@@ -1,6 +1,6 @@
 # Neuropathic Pain Diagnosis Simulator
-
-This is a Python project for generating the simulated data in the neuropathic pain diagnosis. The current version only supports to generate one kind of practical issues for one dataset per generation.
+ 
+This is a Python project for generating the simulated data in the neuropathic pain diagnosis as shown in [1]. The current version only supports to introduce at most one kind of practical issues per generation.
 
 The directory structure is:
 
@@ -31,12 +31,14 @@ Example:
 - default setting:   
 ```python run.py```
   
-- sample size 1000, selection bias:   
+- sample size 1000, selection bias (the same setting with the paper [1]):   
 ```python run.py -z 1000 -s```  
 
-- sample size 500, missing data:  
+- sample size 500, missing data (MCAR):  
 ```python run.py -z 500 -m```  
 
 ## Result
-The simulated dataset is in the "result" folder.
+The simulated dataset is in the "result" folder. The dataset contains simulated patient diagnostic records. Rows of the simulated dataset represent different patients, and columns represent different diagnose (such as left arm pain, C2-C3 discoligamentous injury, and L C2 Radiculopathy).
 
+## Reference
+[1] Neuropathic Pain Diagnosis Simulator for Causal Discovery Algorithm Evaluation. Ruibo Tu, Kun Zhang, Bo Christer Bertilson, Hedvig Kjellstöm, Cheng Zhang
