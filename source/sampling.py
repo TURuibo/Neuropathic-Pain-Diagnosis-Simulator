@@ -4,6 +4,76 @@ from pgmpy.factors.discrete import TabularCPD
 import numpy as np
 from itertools import product
 import pickle
+import sys
+import getopt
+
+def parse_arg(argv):
+    """
+    Parse the input
+    -z  sample size
+    -c  confounder
+    -s  selection bias
+    -m  missing data
+    --sample_size val
+    --confounder
+    --selection_bias
+    --missing_data
+    """
+    sample_size = 100
+    confounder = False
+    selection_bais = False
+    missing_data = False
+
+    try:
+        opts, args = getopt.getopt(argv, "z:csm", ['sample_size=',
+                                                   'confounder=',
+                                                   'selection_bias=',
+                                                   'missing_data='])
+    except getopt.GetoptError:
+        print('Please use the simulator with: \n\'run.py ',
+              '-z <sample size: a integer number> ',
+              '-c <confounder> -s <selection bias> ',
+              '-m <missing data>',
+              '(--sample_size val',
+              '--confounder',
+              '--selection_bias',
+              '--missing_data)\''
+              )
+        sys.exit(2)
+
+    for opt, arg in opts:
+        if opt == '-h':
+            print('run.py -z <sample size: a integer number> -c <confounder> -s <selection bias> -m <missing data>')
+            sys.exit()
+        elif opt in ("-z", "--sample_size"):
+            try:
+                val = int(arg)
+                sample_size = val
+            except ValueError:
+                print("SAMPLE SIZE is not integer.")
+                print('Please use the simulator with: \n\'run.py ',
+                      '-z <sample size: a integer number> ',
+                      '-c <confounder> -s <selection bias> ',
+                      '-m <missing data>',
+                      '(--sample_size val',
+                      '--confounder',
+                      '--selection_bias',
+                      '--missing_data)\''
+                      )
+                sys.exit(2)
+        elif opt in ("-c", "--confounner"):
+            confounder = True
+        elif opt in ("-s", "--selection_bias"):
+            selection_bais = True
+        elif opt in ("-m", "--missing_data"):
+            missing_data = True
+
+    print('SAMPLE SIZE = ', str(sample_size), ',',
+          'CONFOUNDER = ', str(confounder), ',',
+          'SELECTION BIAS = ', str(selection_bais), ',',
+          'MISSING DATA = ', str(missing_data))
+    return sample_size, confounder, selection_bais, missing_data
+
 
 def load_pgm(path='models/bnm.pickle'):
     """

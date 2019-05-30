@@ -4,8 +4,6 @@ This is a Python project for generating the simulated data in the neuropathic pa
 
 The directory structure is:
 
-	|- data: the graph-truth causal relations that are used for constructing the causal graph.  
-
 	|- models: the ground-truth causal graph that can be loaded and used for generating simulated data.  
 
 	|- result: the simulated data are in this folder.  
