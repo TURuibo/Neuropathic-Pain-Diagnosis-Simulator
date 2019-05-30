@@ -38,7 +38,11 @@ Example:
 ```python run.py -z 500 -m```  
 
 ## Result
-The simulated dataset is in the "result" folder. The dataset contains simulated patient diagnostic records. Rows of the simulated dataset represent different patients, and columns represent different diagnose (such as left arm pain, C2-C3 discoligamentous injury, and L C2 Radiculopathy).
+The simulated dataset is in the "result" folder. The dataset contains simulated patient diagnostic records.  
+
+Rows of the simulated dataset represent different patients, and columns represent different diagnose (such as left arm pain, C2-C3 discoligamentous injury, and L C2 Radiculopathy).  
+
+'id_name.txt': For the convenience of representation, we denote different names with numbers and the corresponding numbers of names are in this file. 
 
 ## Reference
 [1] Neuropathic Pain Diagnosis Simulator for Causal Discovery Algorithm Evaluation. Ruibo Tu, Kun Zhang, Bo Christer Bertilson, Hedvig Kjellstöm, Cheng Zhang
