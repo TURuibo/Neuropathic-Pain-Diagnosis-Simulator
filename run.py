@@ -10,11 +10,13 @@ def main(argv):
     df_sim = spl.random_sample(model, nms, sample_size)
     out_nm = 'SampleSize'+str(sample_size)
     if missing_data:
+        # default missingness mechanism is mcar, it can also be mar, or mnar.
+        # each mode has its own parameters: mcar_p, mar_p, mnar_p
         df_sim = spl.add_missing_data(df_sim, mode='mcar', seed=10, mcar_p=0.01, mar_p=[0.5, 0.01], mnar_p=[0.5, 0.01])
         out_nm += '_MissingData'
 
     if selection_bias:
-        df_sim = spl.add_selection_bias(df_sim)
+        df_sim = spl.add_selection_bias(df_sim, prob=0.5, seed=10)
         out_nm += '_SelectionBias'
 
     if confounder:
