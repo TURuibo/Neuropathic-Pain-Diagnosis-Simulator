@@ -8,6 +8,9 @@ def main(argv):
     model = spl.load_pgm()
     nms = spl.get_var_nms()
     df_sim = spl.random_sample(model, nms, sample_size)
+    # Name2Num
+    df_sim = spl.nam2num(df_sim)
+
     out_nm = 'SampleSize'+str(sample_size)
     if missing_data:
         # default missingness mechanism is mcar, it can also be mar, or mnar.

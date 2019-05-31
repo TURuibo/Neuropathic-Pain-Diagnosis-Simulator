@@ -8,6 +8,27 @@ import sys
 import getopt
 
 
+def get_nam_dic():
+    sim_nm = get_var_nms()
+
+    dic_name = {}
+    for i, nam in enumerate(sim_nm):
+        dic_name[nam] = i
+
+    return dic_name
+
+
+def nam2num(df):
+    """
+    According to the dictionary translate the Swedish name to id.
+    """
+    dic_name = get_nam_dic()
+    sim_nm = df.columns.values
+    num_name_sim = [dic_name[nam] for nam in sim_nm]
+    df.columns = num_name_sim
+    return df
+
+
 def missing_mask(df, mode, prob_posi, prob_nega):
 
     nrow, ncol = df.shape

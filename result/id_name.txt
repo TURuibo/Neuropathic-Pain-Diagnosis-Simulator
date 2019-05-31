@@ -1,0 +1,222 @@
+0: DLI C1-C2 
+1: DLI C2-C3 
+2: DLI C3-C4 
+3: DLI C4-C5 
+4: DLI C5-C6 
+5: DLI C6-C7 
+6: DLI C7-C8 
+7: DLI C8-T1 
+8: DLI L1-L2 
+9: DLI L2-L3 
+10: DLI L3-L4 
+11: DLI L4-L5 
+12: DLI L5-S1 
+13: DLI S1-S2 
+14: DLI T1-T2 
+15: DLI T10-T11 
+16: DLI T11-T12 
+17: DLI T12-L1 
+18: DLI T2-T3 
+19: DLI T3-T4 
+20: DLI T4-T5 
+21: DLI T5-T6 
+22: DLI T6-T7 
+23: DLI T7-T8 
+24: DLI T8-T9 
+25: DLI T9-T10 
+26: Kraniocervikal ledskada 
+27: L C2 Radiculopathy 
+28: R C2 Radiculopathy 
+29: L C3 Radiculopathy 
+30: R C3 Radiculopathy 
+31: L C4 Radiculopathy 
+32: R C4 Radiculopathy 
+33: L C5 Radiculopathy 
+34: R C5 Radiculopathy 
+35: L C6 Radiculopathy 
+36: R C6 Radiculopathy 
+37: L C7 Radiculopathy 
+38: R C7 Radiculopathy 
+39: L C8 Radiculopathy 
+40: R C8 Radiculopathy 
+41: L T1 Radiculopathy 
+42: R T1 Radiculopathy 
+43: L T2 Radiculopathy 
+44: R T2 Radiculopathy 
+45: L T3 Radiculopathy 
+46: R T3 Radiculopathy 
+47: L T4 Radiculopathy 
+48: R T4 Radiculopathy 
+49: L T5 Radiculopathy 
+50: R T5 Radiculopathy 
+51: L T6 Radiculopathy 
+52: R T6 Radiculopathy 
+53: L T7 Radiculopathy 
+54: R T7 Radiculopathy 
+55: L T8 Radiculopathy 
+56: R T8 Radiculopathy 
+57: L T9 Radiculopathy 
+58: R T9 Radiculopathy 
+59: L T10 Radiculopathy 
+60: R T10 Radiculopathy 
+61: L T11 Radiculopathy 
+62: R T11 Radiculopathy 
+63: L T12 Radiculopathy 
+64: R T12 Radiculopathy 
+65: L L1 Radiculopathy 
+66: R L1 Radiculopathy 
+67: L L2 Radiculopathy 
+68: R L2 Radiculopathy 
+69: L L3 Radiculopathy 
+70: R L3 Radiculopathy 
+71: L L4 Radiculopathy 
+72: R L4 Radiculopathy 
+73: L L5 Radiculopathy 
+74: R L5 Radiculopathy 
+75: L S1 Radiculopathy 
+76: R S1 Radiculopathy 
+77: L S2 Radiculopathy 
+78: R S2 Radiculopathy 
+79: Ibs 
+80: L neck problems 
+81: Neck pain 
+82: R neck 
+83: L tinnitus 
+84: L eye problems 
+85: L ear problems 
+86: R tinnitus 
+87: R eye problems 
+88: R ear problems 
+89: Headache 
+90: L jaw problems 
+91: L forehead headache 
+92: Mouth 
+93: Forehead headache 
+94: R headache 
+95: R pta 
+96: Pharyngeal discomfort 
+97: R jaw trouble 
+98: Back headache 
+99: R back headache pain 
+100: L collarbone pain 
+101: R collarbone problems 
+102: Central chest pain 
+103: L central chest pain 
+104: L central chest disorders 
+105: R front axle problems 
+106: L shoulder impingement 
+107: R shoulder impingement 
+108: L shoulder problems 
+109: L shoulder trouble 
+110: R shoulder problems 
+111: R shoulder trouble 
+112: L upper arm discomfort 
+113: L upper elbow pain 
+114: Intracapular problems 
+115: L interscapular complaints 
+116: R intracapular trouble 
+117: L lateral elbow pain 
+118: L lateral arm discomfort 
+119: R lateral elbow pain 
+120: L elbow problems 
+121: R elbow trouble 
+122: L arm 
+123: L thumbs up 
+124: R thumbs up 
+125: L wrist problems 
+126: R wrist problems 
+127: L lower arm disorders 
+128: R lower arm disorders 
+129: L hand problems 
+130: R hand problems 
+131: L bend of arm problems 
+132: R armband 
+133: R bend of arm discomfort 
+134: L medial elbow problems 
+135: R medial elbow problems 
+136: L finger trouble 
+137: R finger trouble 
+138: L small finger trouble 
+139: R little finger trouble 
+140: L groin trouble 
+141: L medial groin disorders 
+142: L lateral groin discomfort 
+143: Central groin disorders 
+144: R lateral groin discomfort 
+145: R groin trouble 
+146: L adductor tendon 
+147: R adductor tendonitis  
+148: L hip disorders 
+149: L backache 
+150: Backache 
+151: L lumbago 
+152: Lumbago 
+153: R lumbago 
+154: L front thigh pain 
+155: R front thigh pain 
+156: R thigh problems 
+157: L leg problems 
+158: L thigh pain 
+159: R leg problems 
+160: R medial vadbesvär 
+161: L pta 
+162: L hip joint 
+163: R hip trouble 
+164: R hip arthritis 
+165: L medial knee joint disorder 
+166: L front knee pain 
+167: R medial knee joint disorder 
+168: R front knee pain 
+169: L shin 
+170: R shin 
+171: L llower leg problems 
+172: L knee trouble 
+173: R knee trouble 
+174: L tåledbesvär 
+175: L big toe problems 
+176: R big toe problems 
+177: L foot pain 
+178: L ankle trouble 
+179: R ankle trouble 
+180: L footstool trouble 
+181: R arch 
+182: R morton trouble 
+183: R fainting 
+184: L ischias 
+185: R ischias 
+186: L ham 
+187: L obesity 
+188: R ham 
+189: L toe problems 
+190: R foot pain 
+191: R tear problems 
+192: R obesity 
+193: R dorsal knee joint disorder 
+194: L dorsal knee joint disorder 
+195: L lateral knee pain 
+196: R lateral knee pain 
+197: L small toe trouble 
+198: L lateral foot disorders 
+199: R lateral foot disorders 
+200: R heel problems 
+201: Calcaneal pain 
+202: L heel  problems 
+203: Coccydyni 
+204: L rear thigh pain 
+205: R rear thigh pain 
+206: L achilles problems 
+207: L achilles tendon 
+208: L achillodyni 
+209: R achilles problems 
+210: R achilles tendency 
+211: R achillodyni 
+212: Breast backache 
+213: Chest discomfort 
+214: L breast problems 
+215: R breast problems 
+216: Toracal dysfunction 
+217: Upper abdominal discomfort 
+218: Lateral abdominal discomfort 
+219: Abdominal discomfort 
+220: L lower abdominal discomfort 
+221: Lower abdominal discomfort 
