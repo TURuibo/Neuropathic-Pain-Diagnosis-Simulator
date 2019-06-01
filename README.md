@@ -8,7 +8,9 @@ The directory structure is:
 
 	|- result: the simulated data are in this folder.  
 
-	|- source: the source codes for creating the ground-truth causal graph and generating the simulated data.  
+	|- source: the source codes for computing causal accuracy and generating the simulated data.  
+	
+	|- exampe: the related files for the demo of computing causal accuracy
 
 	run.py: the python file that is used for generating simulated data.  
 	
