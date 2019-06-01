@@ -12,7 +12,7 @@ The directory structure is:
 
 	run.py: the python file that is used for generating simulated data.  
 	
-	demo_cauacc.py: a python file which is a demo of computing causal accuracies of PC and FCI in Tetrad [2].  
+	demo_cauacc.py: a demo shows how [1] computes causal accuracies of PC and FCI in Tetrad [2].  
 
 	requirements.txt: all the necessary packages required for the project.  
 
@@ -41,17 +41,16 @@ Example:
 ```python run.py -z 500 -m```
 
 ### Compute the causal accuracy 
-As one of the evaluation metric, we show a demo which uses the causal accuracy to evaluate PC and FCI in Tetrad. 
+As one of the evaluation metrics in [1], we show a demo which uses the causal accuracy to evaluate PC and FCI in Tetrad. 
 
 1. Load the ground-truth causal graph (DAG)
-2. Convert DAG to CPDAG and PAG for comparing with the PC and FCI results with R package pcalg [3].
+2. Convert ground-truth DAG to Complete Partially Directed Acyclic Graph (CPDAG) and Partial Ancestral Graph(PAG) with R package pcalg [3].
 3. Load the Tetrad output text files of PC and FCI.
 4. Compute the causal accuracy of PC and FCI result.
  
 ```python  demo_cauacc.py```
 
   
-
 ## Result: simulated data
 The simulated dataset is in the "result" folder. The dataset contains simulated patient diagnostic records.  
 
