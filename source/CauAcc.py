@@ -4,16 +4,27 @@ from source import sampling as spl
 import pickle
 
 
-def dag2cpdag(dag_GT):
-    return dag_GT
+def dag2cpdag():
+    """
+    We run dag2cpdag in the R package pcalg, then we load the result of pcalg function dag2cpdag here.
+    :return:
+    """
+    return np.array(pd.read_csv('example/cpdag_GT.csv', index_col=0))
 
 
-def dag2pag(dag_GT):
-    return dag_GT
+def dag2pag():
+    """
+    We run dag2pag in the R package pcalg, then we load the result of pcalg function dag2cpdag here.
+    :return:
+    """
+    return np.array(pd.read_csv('example/pag_GT.csv', index_col=0))
 
 
 def causal_acc(gt,g):
-    return
+    mask_edge = gt != 0
+    correct = (g == gt) & mask_edge
+    racc = np.sum(correct) / np.sum(mask_edge)
+    return racc
 
 
 def load_graph_true_graph():
