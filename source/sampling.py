@@ -18,10 +18,12 @@ def get_nam_dic():
     return dic_name
 
 
-def nam2num(df):
+def nam2num(df_in):
     """
     According to the dictionary translate the Swedish name to id.
     """
+    df = df_in.copy(deep=True)
+
     dic_name = get_nam_dic()
     sim_nm = df.columns.values
     num_name_sim = [dic_name[nam] for nam in sim_nm]
@@ -30,8 +32,10 @@ def nam2num(df):
 
 
 def missing_mask(df, mode, prob_posi, prob_nega):
+    df = df_in.copy(deep=True)
 
     nrow, ncol = df.shape
+
     if mode =='mar':
         idx_no_radi = np.array(list(set(range(0, ncol)) - set(range(27, 79))))
     else:
@@ -54,8 +58,10 @@ def missing_mask(df, mode, prob_posi, prob_nega):
     return df_mask
 
 
-def add_missing_data(df, mode='mcar', seed=10, mcar_p=0.0007, mar_p=[0.9, 0.1], mnar_p=[0.9, 0.093]):
+def add_missing_data(df_in, mode='mcar', seed=10, mcar_p=0.0007, mar_p=[0.9, 0.1], mnar_p=[0.9, 0.093]):
+    df = df_in.copy(deep=True)
     np.random.seed(seed)
+
     nrow, ncol = df.shape
 
     if mode == 'mcar':
@@ -78,7 +84,8 @@ def add_missing_data(df, mode='mcar', seed=10, mcar_p=0.0007, mar_p=[0.9, 0.1], 
     return df
 
 
-def add_selection_bias(df, seed=10, prob=0.9):
+def add_selection_bias(df_in, seed=10, prob=0.9):
+    df = df_in.copy(deep=True)
     np.random.seed(seed)
     sel_var = [35, 36, 37, 38, 73, 74, 75, 76]  #
     nrow, ncol = df.shape
@@ -104,8 +111,8 @@ def add_selection_bias(df, seed=10, prob=0.9):
     return df
 
 
-def add_confounder(df):
-    df = df.iloc[:, 79:]
+def add_confounder(df_in):
+    df = df_in.iloc[:, 79:]
     return df
 
 

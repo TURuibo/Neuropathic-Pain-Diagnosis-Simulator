@@ -5,3 +5,4 @@ update_memo.md
 .idea/
 source/__pycache__/
 venv/
+.ipynb_checkpoints/
