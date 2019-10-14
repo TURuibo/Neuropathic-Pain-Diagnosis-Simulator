@@ -11,7 +11,7 @@ The Neuropathic Pain Diagnosis Simulator is a Python package for generating synt
 
 ## Introduction
 
-The neuropathic pain diagnosis consists of sympotom diagnosis, pattern diagnosis, and pathophysiological diagnosis. The symptom diagnosis describes the discomfort of patients such as lumbago and lateral arm discomfort. The pattern diagnosis identifies nerve roots that lead to symptom patterns. The pathophysiological diagnosis identifies of discoligamentous injuries.
+The neuropathic pain diagnosis mainly consists of sympotom diagnosis, pattern diagnosis, and pathophysiological diagnosis. The symptom diagnosis describes the discomfort of patients such as lumbago and lateral arm discomfort. The pattern diagnosis identifies nerve roots that lead to symptom patterns. The pathophysiological diagnosis identifies of discoligamentous injuries.
 
 The simulator generates synthetic neuropathic pain diagnosis records in the form of tables of which the row represents different patients and the column represents different diagnositc labels. The diagnostic labels are binary: Taking the value "0" represents that the diagnostic label is not in a patient record; taking the value "1" represents that the diagnostic label is in a patient record. 
 
@@ -21,7 +21,7 @@ In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/subset_causal_relations.png'
     height="300">
 
-A typical example of the causal graph is in the Figure 1. The causal graph consists of three layers: 
+A typical example of the causal graph is in the above figure. The causal graph consists of three layers: 
 pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
 
 
