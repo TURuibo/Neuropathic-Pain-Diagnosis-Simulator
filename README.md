@@ -44,9 +44,9 @@ Example:
 
 ## Examples
 
-A tutorial shows how to simulate data in the [Tutorial 1](https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/tree/master/Tutorial\ 1.).
+A tutorial shows how to simulate data in the [Tutorial 1](https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/tree/master/Tutorial1.).
 
-A tutorial shows how to compute causal accurcay of PC and FCI on the simulation data [Tutorial 2](https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/tree/master/Tutorial\ 2.).
+A tutorial shows how to compute causal accurcay of PC and FCI on the simulation data [Tutorial 2](https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/tree/master/Tutorial2.).
 
 ## Result: simulated data
 
