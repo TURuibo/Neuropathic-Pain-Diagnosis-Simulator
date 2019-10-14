@@ -1,6 +1,6 @@
 # Neuropathic Pain Diagnosis Simulator
 
-The Neuropathic Pain Diagnosis Simulator is a Python package for generating synthetic diagnosis records of neuropathic pain patients. Moreover, for evaluating causal discovery algorithms we provide the ground-true causal relations. We also provide options to introduce the practical issues into simulated data such as unknown confounding, selection bias, and missing data.
+The Neuropathic Pain Diagnosis Simulator is a Python package for generating synthetic diagnosis records of neuropathic pain patients. Moreover, for evaluating causal discovery algorithms we provide the ground-true causal relations of the variables involving in the simulator. We also provide options to introduce the practical issues into simulated data such as unknown confounding, selection bias, and missing data.
 
 ## Content 
 
