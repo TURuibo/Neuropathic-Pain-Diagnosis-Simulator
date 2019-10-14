@@ -19,8 +19,7 @@ In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc
 
 <img
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/subset_causal_relations.png'
-    style="width:200px;"
-    title='Fig 1. A typical example of the causal graph.'>
+    width="200" height="200">
 
 A typical example of the causal graph is in the Figure 1. The causal graph consists of three layers: 
 pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
