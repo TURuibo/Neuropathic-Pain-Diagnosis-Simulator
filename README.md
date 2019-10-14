@@ -17,12 +17,14 @@ The simulator generates synthetic neuropathic pain diagnosis records in the form
 
 In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a [causal graph](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). In general, neuropathic pain symptoms in the symptom diagnosis are mainly caused by radiculopathy (Radi) in the pattern diagnosis, and the radiculopathy is mostly caused by discoligamentous injury (DLI) in the pathophysiological diagnosis. 
 
-A typical example of the causal graph is shown in Figure 1. The causal graph consists of three layers: 
-pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
 <img
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/subset_causal_relations.png'
-    style='max-width:50%;'
+    style='max-width:20%;'
     title='Fig 1. A typical example of the causal graph.'>
+
+A typical example of the causal graph is in the Figure 1. The causal graph consists of three layers: 
+pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
+
 
 More details can be found in [the paper [1]](https://arxiv.org/abs/1906.01732). 
 
