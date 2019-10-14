@@ -11,9 +11,9 @@ The Neuropathic Pain Diagnosis Simulator is a Python package for generating synt
 
 ## Introduction
 
-The neuropathic pain diagnosis mainly consists of sympotom diagnosis, pattern diagnosis, and pathophysiological diagnosis. The symptom diagnosis describes the discomfort of patients such as lumbago and lateral arm discomfort. The pattern diagnosis identifies nerve roots that lead to symptom patterns. The pathophysiological diagnosis identifies of discoligamentous injuries.
+The neuropathic pain diagnosis mainly consists of symptom diagnosis, pattern diagnosis, and pathophysiological diagnosis. The symptom diagnosis describes the discomfort of patients such as lumbago and lateral arm discomfort. The pattern diagnosis identifies nerve roots that lead to symptom patterns. The pathophysiological diagnosis identifies of discoligamentous injuries.
 
-The simulator generates synthetic neuropathic pain diagnosis records in the form of tables of which the row represents different patients and the column represents different diagnositc labels. The diagnostic labels are binary: Taking the value "0" represents that the diagnostic label is not in a patient record; taking the value "1" represents that the diagnostic label is in a patient record. For exampe, the dataset looks like the following table.
+The simulator generates synthetic neuropathic pain diagnosis records in the form of tables of which the row represents different patients and the column represents different diagnostic labels. The diagnostic labels are binary: Taking the value "0" represents that the diagnostic label is not in a patient record; taking the value "1" represents that the diagnostic label is in a patient record. For example, the dataset looks like the following table.
 
 |Patient id 	| DLS C1-C2 	| DLS C2-C3		|...		| L C2 Radiculopathy | R C2 Radiculopathy|...|L neck pain| R neck pain| ...|
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |
@@ -24,14 +24,13 @@ The simulator generates synthetic neuropathic pain diagnosis records in the form
 |n| 1 | 0| ...| 1 |0|...|0| 1| ...|
 
 
-In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a [causal graph](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). In general, neuropathic pain symptoms in the symptom diagnosis are mainly caused by radiculopathy (Radi) in the pattern diagnosis, and the radiculopathy is mostly caused by discoligamentous injury (DLI) in the pathophysiological diagnosis. 
+In the generated dataset, the neuropathic pain diagnosis includes 222 diagnostic labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a [causal graph](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). In general, neuropathic pain symptoms in the symptom diagnosis are mainly caused by radiculopathy (Radi) in the pattern diagnosis, and the radiculopathy is mostly caused by discoligamentous injury (DLI) in the pathophysiological diagnosis. 
 
 <img
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/subset_causal_relations.png'
     height="300">
 
-A typical example of the causal graph is in the above figure. The causal graph consists of three layers: 
-pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
+A typical example of the causal graph is in the above figure. The causal graph consists of three layers: pathophysiological diagnosis layer, pattern diagnosis layer, and symptom diagnosis layer. Nodes in each layer have no connection with each other. Arrows either point from nodes in the pathophysiological diagnosis layer to nodes in the pattern diagnosis layer or from nodes in the pattern diagnosis layer to nodes in the symptom diagnosis layer. 
 
 
 More details can be found in [the paper [1]](https://arxiv.org/abs/1906.01732). 
