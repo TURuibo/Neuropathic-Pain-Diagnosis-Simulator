@@ -11,7 +11,7 @@ This is a Python package for generating the synthetic data in the neuropathic pa
 
 ## Introduction
 
-### Result: simulated data
+__Result: simulated data__
 
 The simulated dataset is in the "result" folder. The dataset contains simulated patient diagnostic records.  
 
@@ -36,25 +36,23 @@ The directory structure is:
 * exampe: the related files for the demo of computing causal accuracy
 
 ## Usage and Examples
-### Using command line to generate data
-
-(Please make sure that the current directory is in the project.)
+__Using command line to generate data__
+(Please make sure that the current directory is in the project. The current version only supports to introduce one practical issue to the dataset every time.)
 
 ```python run.py -z <sample size: input a integer number> -c <confounder: flag without value> -s <selection bias: flag without value> -m <missing data: flag without value>```
 
 Default setting: sample size 100, no confounder, no selection bias, no missing data 
 
-Example:   
 - default setting:   
 ```python run.py```
   
-- sample size 1000, selection bias (the same setting with the paper [1]):   
+- sample size 1000, selection bias:   
 ```python run.py -z 1000 -s```  
 
 - sample size 500, missing data (MCAR):  
 ```python run.py -z 500 -m```
 
-### Examples
+__Examples__
 
 A tutorial shows how to simulate data in the [Tutorial 1](https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/Tutorial1.ipynb).
 
