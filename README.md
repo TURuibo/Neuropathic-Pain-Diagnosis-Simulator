@@ -19,7 +19,7 @@ In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc
 
 <img
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/subset_causal_relations.png'
-    style='max-width:20%;'
+    style="width:200px;"
     title='Fig 1. A typical example of the causal graph.'>
 
 A typical example of the causal graph is in the Figure 1. The causal graph consists of three layers: 
