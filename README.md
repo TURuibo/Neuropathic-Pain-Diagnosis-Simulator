@@ -13,7 +13,14 @@ The Neuropathic Pain Diagnosis Simulator is a Python package for generating synt
 
 The neuropathic pain diagnosis mainly consists of sympotom diagnosis, pattern diagnosis, and pathophysiological diagnosis. The symptom diagnosis describes the discomfort of patients such as lumbago and lateral arm discomfort. The pattern diagnosis identifies nerve roots that lead to symptom patterns. The pathophysiological diagnosis identifies of discoligamentous injuries.
 
-The simulator generates synthetic neuropathic pain diagnosis records in the form of tables of which the row represents different patients and the column represents different diagnositc labels. The diagnostic labels are binary: Taking the value "0" represents that the diagnostic label is not in a patient record; taking the value "1" represents that the diagnostic label is in a patient record. 
+The simulator generates synthetic neuropathic pain diagnosis records in the form of tables of which the row represents different patients and the column represents different diagnositc labels. The diagnostic labels are binary: Taking the value "0" represents that the diagnostic label is not in a patient record; taking the value "1" represents that the diagnostic label is in a patient record. For exampe, the dataset looks like the following table.
+|Patient id| DLS C1-C2 | DLS C2-C3| ...| L C2 Radiculopathy | R C2 Radiculopathy|...|L neck pain| R neck pain| ...|
+|1| 1 | 1| ...| 0 |1|...|1| 0| ...|
+|2| 0 | 0| ...| 0 |0|...|1| 0| ...|
+|3| 0 | 0| ...| 1|0|...|0| 0| ...|
+|...| ... | ...| ...| ... |...|...|...| ...| ...|
+|n| 1 | 0| ...| 1 |0|...|0| 1| ...|
+
 
 In the generated dataset, the neuropathic pain diagnosis includes 222 diagnositc labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a [causal graph](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). In general, neuropathic pain symptoms in the symptom diagnosis are mainly caused by radiculopathy (Radi) in the pattern diagnosis, and the radiculopathy is mostly caused by discoligamentous injury (DLI) in the pathophysiological diagnosis. 
 
