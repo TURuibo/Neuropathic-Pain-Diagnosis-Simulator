@@ -24,7 +24,7 @@ The simulator generates synthetic neuropathic pain diagnosis records in the form
 |n| 1 | 0| ...| 1 |0|...|0| 1| ...|
 
 
-In the generated dataset, the neuropathic pain diagnosis includes 222 diagnostic labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a causal graph which can be found [here](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). 
+In the generated dataset, the neuropathic pain diagnosis includes 222 diagnostic labels. More specifically, 143 symptoms such as left arm pain, and right neck pain are in symptom diagnosis; 52 radiculopathies are in the pattern diagnosis; craniocervical junction injury and 26 discoligamentous injuries are in pathophysiological diagnosis. The causal relations in neuropathic pain diagnosis are shown in a causal graph. The interactive graph can be found [here](https://observablehq.com/@turuibo/the-complete-causal-graph-of-neuropathic-pain-diagnosis). 
 <img
     src='https://github.com/TURuibo/Neuropathic-Pain-Diagnosis-Simulator/blob/master/example/full_causal_relations.png'
     height="300">
