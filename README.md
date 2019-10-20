@@ -37,14 +37,14 @@ More details can be found in [the paper [1]](https://arxiv.org/abs/1906.01732).
 
 ## Installation
 
-Step 1: Install [Python 3](https://www.python.org/downloads/)
+Step 1: Install [Python 3](https://www.python.org/downloads/).
 
-Step 2: Intall pip  
+Step 2: Intall (pip)[https://pip.pypa.io/en/stable/installing/].
 
 ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py```  
 ```python get-pip.py``` 
 
-Step 3: In the project directory, install all the packages in the "requirements.txt"  
+Step 3: In the project directory, install all the packages in the "requirements.txt".    
 ```pip install -r requirements.txt```
 
 ## Structure of Repository
